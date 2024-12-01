@@ -50,6 +50,9 @@ export class CrudComponent {
         this.dataSource.paginator = this.paginator;
         this.dataSource.sort = this.sort;
         this.paginator._intl.itemsPerPageLabel="Itens por página";
+
+        console.log("teste: "+ this.listusers.length);
+
       },
       error: (err) => {
         console.error(err)
@@ -100,4 +103,3 @@ export class CrudComponent {
       
   }
 }
-console.log("teste2"+ UsersService);

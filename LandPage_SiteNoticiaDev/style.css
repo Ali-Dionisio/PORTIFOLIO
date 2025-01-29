@@ -1,0 +1,223 @@
+*{
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    font-size: 12px;
+    
+}
+main{
+    margin: 3rem 5rem 0 5rem;
+}
+h2{
+    font-size: 2rem;
+}
+a{
+    color: #fff;
+    font-weight: 300;
+}
+.titulo{
+    background-color: #02a28f;
+    color: #fff;
+}
+.titulo-card{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+    background-color: #02a28f;
+    color: #fff;
+}
+header {
+    padding: 1.5rem 0 1.5rem 0;
+}
+header h1{
+    font-size: 3rem;
+    font-weight: 700px;
+    margin: 0 0 0 6rem;
+}
+footer {
+    padding: .5rem 0 .5rem 0;
+    margin-top: 3rem;
+}
+footer h3{
+    font-size: 1rem;
+    font-weight: 600px;
+    text-align: center;
+}
+.grid-column-container{
+    display: grid;
+    grid-template-columns: 70% auto;
+    grid-template-rows: 1;
+    gap: 1.5rem;
+}
+#presentation{
+    height: 100%;
+    background: linear-gradient(rgba(102, 102, 102, 0) 0%, #000000 100%), url(./img/predio.jfif);
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: end;
+    color: #fff;
+    cursor: pointer;
+}
+#presentation div{
+    padding: 0px;
+    margin: 0 0 1rem 1.5rem;
+}
+.grid-container > .design1, 
+.grid-container > .design2, 
+.grid-container > .design3, 
+.grid-container > .design4{
+    border-radius: 20px;
+    box-shadow: 2px 2px 8px #616161;
+    cursor: pointer;
+}
+.grid-column > img, .grid-container img {
+    width: 100%;
+}
+.grid-column-container > .design3, 
+.grid-column-container > .design4{
+    margin-right: 6rem;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding: 1rem 0;
+}
+.design1, .design3, 
+.design2, .design4 {
+    width: 100%;
+    background-size: cover;
+}
+.design1{
+    grid-area:  1 / 1;
+}
+.design2{
+    grid-area:  2 / 1;
+}
+
+.grid-column-container .design2 > .titulo-card > h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 1rem 1.5rem 1rem 1.5rem;
+}
+.design3{
+    grid-area:  1 / 2;
+}
+.design4{
+    grid-area:  2 / 2;
+}
+.tipo{
+    color: #02A28F;
+    font-weight: 400;
+    font-size: 1rem;
+}
+.titleCard{
+    color: #000;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin: .5rem 0 .5rem 0;
+}
+.autor{
+    color: #616161;
+    font-size: 1rem;
+}
+.texto{
+    font-weight: 400;
+    font-size: 1rem;
+    margin: .5rem 0 .5rem 0;
+}
+.footerCard{
+    color: #616161;
+    font-weight: 500;
+    font-size: 1rem;
+    display: flex;
+}
+.design-text{
+    padding: 1rem;
+}
+.grid-column > .titulo-card > h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 1rem 1.5rem 1rem 1.5rem;
+}
+.listaCategorias ul{
+    list-style: none;
+    color: #616161;
+    font-weight: 600;
+    padding: 0;
+
+}
+.listaCategorias li{
+    margin-top: 1rem;
+    cursor: pointer;
+}
+ul {
+    display: flex;
+    justify-content:space-between;
+}
+.card-posts img{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+.card-posts{
+    margin-top: 9%;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 1px 2px 6px #616161;
+    display: flex;
+    cursor: pointer;
+}
+.texto-posts {
+    margin-left: 1rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.texto-posts .footerCard{
+    margin-top: .5rem;
+}
+.texto-posts h3 {
+    margin-left: 1rem;
+    font-size: 1.2rem;
+}
+@media only screen and (max-width: 768px) {
+    header h1{
+        font-size: 1rem
+    }
+    main{
+    margin: 1% 4% 0 2%;
+
+    }
+    #presentation{
+        height: 50vw;
+    }
+    .grid-column-container{
+        display: grid;
+        grid-template-columns: auto;
+        gap: 1.5rem;
+    }
+    .grid-container{
+        display: grid;
+        grid-template-columns: auto;
+        gap: 1.5rem;
+        padding: 1rem 0;
+    }
+    .design1{
+        grid-area:  1 / 1;
+    }
+    .design2{
+        grid-area:  2 / 1;
+    }
+    .design3{
+        grid-area:  3 / 1;
+    }
+    .design4{
+        grid-area:  4 / 1;
+    }
+    .card-posts {
+     margin-top: 3%;
+    }
+    
+}

@@ -2,6 +2,8 @@ Landpage Portifolio Maria
 
 Pagina landpage como portifolio para Maria, com algum dos seus clientes e contato para consultoria.
 
+Linguagens utilizadas: HTML, CSS
+
 Acesse online:
 https://gleaming-gingersnap-0c16d6.netlify.app/
 

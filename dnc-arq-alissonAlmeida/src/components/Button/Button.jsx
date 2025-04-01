@@ -1,5 +1,6 @@
 import './Button.css'
 import whiteArrow from '../../assets/setaDireita.svg'
+
 //arrow, loading
 function Button ({arrow, buttonStyle, children, ...props}) {
     return (

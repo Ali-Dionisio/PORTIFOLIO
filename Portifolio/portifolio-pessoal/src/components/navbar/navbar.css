@@ -1,0 +1,21 @@
+.navbar{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    list-style: none;
+    width: 120vh;
+}
+.linkContato{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    list-style: none;
+    width: 15vh;
+}

@@ -1,0 +1,17 @@
+.titulo{
+    color: white;
+}
+.texto {
+    color: white;
+    padding: 15px;
+}
+.saibaMais{
+    padding: 0 35px;
+}
+.btnSaibaMais{
+    border-radius: 83px;
+
+}
+.boxTitulo{
+    margin: 0rem 0rem 0rem 10rem;
+}

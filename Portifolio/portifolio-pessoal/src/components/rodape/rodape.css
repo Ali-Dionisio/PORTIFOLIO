@@ -1,0 +1,26 @@
+.rodape{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+.rod {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    list-style: none;
+    width: 120vh;
+}
+.linkContato{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    list-style: none;
+    width: 15vh;
+}
+.listContato {
+    display: flex;
+    align-items: center;
+}

@@ -7,9 +7,9 @@ function Navbar() {
     <>
       <div className='navbar'>
         <ul className='nav'>
-          <li>Inicio</li>
-          <li>Sobre</li>
-          <li>Projetos</li>
+          <a href="#resumo"><li>Inicio</li> </a>
+          <a href="#sobre"><li>Sobre</li> </a>
+          <a href="#projetos"><li>Projetos</li> </a>
           <li>
             <ul className='linkContato'>
               <li>

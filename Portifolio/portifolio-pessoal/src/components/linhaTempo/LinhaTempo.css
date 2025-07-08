@@ -18,18 +18,13 @@
 }
 .linhaTempo { 
     width: 10%;
-    transform: rotate(270deg);
  } 
 .textoSobre, .anoSobre{
-    transform: rotate(90deg);
     color: white;
 }
-.css-1ami7lv-MuiTimelineConnector-root{
-    width: 6px !important;
+
+@media (max-width: 668px) {
+.caixaLinhaTempo{
+    display: block;
 }
-.css-v6mo1y-MuiTimelineDot-root{
-    margin: 0 !important;
-}
-.css-w6t25c-MuiTypography-root-MuiTimelineContent-root {
-    padding: 25px 19px !important;
 }

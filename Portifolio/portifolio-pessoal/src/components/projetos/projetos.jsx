@@ -8,6 +8,7 @@ function Projetos() {
     return (
     <>
     <div className='projetos'>
+    <h2 className='titulo' id='projetos'>Projetos </h2>
       <div className='galeria'>
         <div className='caixa'>
           <div>

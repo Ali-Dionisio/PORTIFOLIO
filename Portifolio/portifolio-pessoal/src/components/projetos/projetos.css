@@ -1,7 +1,10 @@
 .projetos{
     width: 100%;
-    display: flex;
+    display: inline;
     justify-content: center;
+}
+.projetos > h2{
+    text-align: center;
 }
 .galeria {
     /* width: 70%; */
@@ -31,4 +34,10 @@
     color: white;
     padding: 8px;
     background: linear-gradient(#945DD6, #6978D1, #13ADC7);
+}
+
+@media (max-width: 668px) {
+    .galeria{
+        grid-template-columns:auto;
+    }
 }

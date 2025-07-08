@@ -13,7 +13,7 @@ import TimelineOppositeContent, {
 function LinhaTempo() {
     return (
     <>
-    <div className='sobremim'>
+    <div className='sobremim' id='sobre'>
       <div className='textosSobreMim'>
         <h2 className='titleSobreMim'>Sobre mim</h2>
       </div>

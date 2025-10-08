@@ -102,6 +102,36 @@ function updateEstoqueRepository(updatedEstoque, estoqueId) {
   });
 }
 
+function updateEstoqueByIdProdutoRepository(produtoId, saldo) {
+  let updatedEstoque = {
+    quantidade: saldo 
+  }
+  return new Promise((resolve, reject) => {
+    const fields = ["quantidade"];
+    let query = "UPDATE estoque SET";
+    const values = [];
+
+    fields.forEach((field) => {
+      if (updatedEstoque[field] !== undefined) {
+        query += ` ${field} = ?,`;
+        values.push(updatedEstoque[field]);
+      }
+    });
+
+    query = query.slice(0, -1);
+
+    query += " WHERE id_produto = ?";
+    values.push(produtoId);
+    db.run(query, values, function (err) {
+      if (err) {
+        reject(err);
+      } else {
+        resolve({ id: produtoId, ...updatedEstoque });
+      }
+    });
+  });
+}
+
 
 function deleteEstoqueRepository(estoqueId) {
   return new Promise((resolve, reject) => {
@@ -120,6 +150,7 @@ export default {
   findAllEstoquesRepository,
   findEstoqueByIdRepository,
   findQuantidadeEstoqueByIdRepository,
+  updateEstoqueByIdProdutoRepository,
   updateEstoqueRepository,
   deleteEstoqueRepository,
 };

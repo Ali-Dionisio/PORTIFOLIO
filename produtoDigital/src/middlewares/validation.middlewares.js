@@ -2,6 +2,7 @@ import { userIdSchema } from "../schema/user.schema.js";
 import { produtoIdSchema } from "../schema/produto.schema.js";
 import { pedidoIdSchema } from "../schema/pedido.schema.js";
 import { estoqueIdSchema } from "../schema/estoque.schema.js";
+import { vendaIdSchema } from "../schema/venda.schema.js";
 
 const validate = (schema) => (req, res, next) => {
     try {
@@ -49,5 +50,22 @@ const validateEstoqueId = (req, res, next) => {
   }
 };
 
+const validateVendaId = (req, res, next) => {
+  try {
+    vendaIdSchema.parse({ vendaId: +req.params.id });
+    next();
+  } catch (e) {
+    res.status(400).json({ error: e.errors });
+  }
+};
 
-export { validate, validateUserId, validateProdutoId, validatePedidoId, validateEstoqueId };
+
+export 
+{ 
+    validate, 
+    validateUserId, 
+    validateProdutoId, 
+    validatePedidoId, 
+    validateEstoqueId, 
+    validateVendaId 
+};
